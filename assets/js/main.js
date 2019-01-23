@@ -3,7 +3,7 @@ const contacts = [
   ["Peter", "Shaw", ["peter.shaw@mail.com", "peter.shaw@mail.de"]],
   ["Bob", "Andrews", ["bob.andrews@mail.com", "bob.andrews@mail.de"]]
 ];
-var finalText = "<table class=table table-striped table-bordered>";
+var finalText = '<table class="table table-striped table-bordered">';
 finalText =
   finalText +
   "<tr><th>First name</th><th>Last name</th><th>Email addresses</th></tr>";

@@ -23,3 +23,9 @@ a {
 a {
   text-decoration: underline;
 }
+.table-bordered {
+  border: 2px solid black;
+}
+.table-striped tr:nth-child(2n + 2) {
+  background-color: #ccc;
+}
