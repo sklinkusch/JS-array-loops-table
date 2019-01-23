@@ -1,0 +1,25 @@
+body {
+  color: #555;
+  padding-top: 2rem;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+.content {
+  margin: 0 1rem;
+}
+
+h1 span {
+  color: #3672a4;
+}
+
+p span,
+a {
+  color: #3672a4;
+}
+
+a {
+  text-decoration: underline;
+}
