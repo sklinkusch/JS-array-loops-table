@@ -29,3 +29,7 @@ a {
 .table-striped tr:nth-child(2n + 2) {
   background-color: #ccc;
 }
+th,
+td {
+  border: 1px solid black;
+}
