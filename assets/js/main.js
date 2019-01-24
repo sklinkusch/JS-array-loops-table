@@ -7,20 +7,17 @@ var finalText = '<table class="table table-striped table-bordered">';
 finalText =
   finalText +
   "<tr><th>First name</th><th>Last name</th><th>Email addresses</th></tr>";
-var append = contacts.map(row => {
-  i = "<tr>";
-  row.map(cell => {
+contacts.forEach(row => {
+  finalText = finalText + "<tr>";
+  row.forEach(cell => {
     if (typeof cell === "object") {
       myString = cell.join("<br>");
     } else {
       myString = cell;
     }
-    i = i + `<td>${myString}</td>`;
-    return i;
+    finalText = finalText + `<td>${myString}</td>`;
   });
-  i = i + "</tr>";
-  return i;
+  finalText = finalText + "</tr>";
 });
-finalText = finalText + append.join("");
 finalText = finalText + "</table>";
 document.getElementById("table").innerHTML = finalText;
